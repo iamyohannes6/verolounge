@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Vero Lounge Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Browse our selection of premium alcoholic beverages at Vero Lounge. View our full and half portion prices for whiskey, vodka, gin, tequila, and more.">
+    <meta name="theme-color" content="#0a0a0a">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Categories</a>
+            <div class="navigation-links">
+                <a href="index.html">Home</a>
+                <a href="#" class="active-link" id="category-nav-link">Menu</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <span class="brand-label">Mekelle, Tigray</span>
+            <h1>Vero <span class="highlight">Lounge</span></h1>
+            <p class="category-title">
+                <span id="category-title" class="highlight-text">Category</span> Selection
+            </p>
+        </header>
+        
+        <div class="products-container">
+            <div class="items-header">
+                <div class="item-name">Product Name</div>
+                <div class="price-column">
+                    <div class="price-header">Full</div>
+                    <div class="price-header">Half</div>
+                </div>
+            </div>
+            <div id="items-list" class="items-list">
+                <!-- Items will be populated via JavaScript -->
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Vero Lounge - <span class="highlight-text">Enjoy Responsibly</span></p>
+        </footer>
+    </div>
+    
+    <script src="products.js"></script>
+</body>
+</html> 
