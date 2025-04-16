@@ -23,8 +23,23 @@
             <span class="brand-label">Mekelle, Tigray</span>
             <h1>Vero <span class="highlight">Lounge</span></h1>
             <p class="subtitle">Enjoy our exquisite drink selection</p>
-            <a href="contact.html" class="contact-link"><i class="fas fa-map-marker-alt"></i> Find Us</a>
         </header>
+        
+        <!-- Banner Section with Pagination -->
+        <div class="banner-container">
+            <div class="banner-slider">
+                <div class="banner active">
+                    <img src="assets/banner1.webp" alt="Vero Lounge Promotion">
+                </div>
+                <div class="banner">
+                    <img src="assets/banner2.webp" alt="Vero Lounge Special Offer">
+                </div>
+            </div>
+            <div class="banner-pagination">
+                <span class="dot active" onclick="currentBanner(1)"></span>
+                <span class="dot" onclick="currentBanner(2)"></span>
+            </div>
+        </div>
         
         <div class="category-grid">
             <a href="products.html?category=whiskey" class="category-card">
@@ -69,8 +84,48 @@
         </div>
         
         <footer>
+            <a href="contact.html" class="contact-link"><i class="fas fa-map-marker-alt"></i> Find Us</a>
             <p>© 2025 Vero Lounge - <span class="highlight-text">Enjoy Responsibly</span></p>
         </footer>
     </div>
+
+    <script>
+        // Banner slider functionality
+        let bannerIndex = 1;
+        showBanners(bannerIndex);
+        
+        // Auto slide every 5 seconds
+        setInterval(function() {
+            changeBanner(1);
+        }, 5000);
+        
+        function changeBanner(n) {
+            showBanners(bannerIndex += n);
+        }
+        
+        function currentBanner(n) {
+            showBanners(bannerIndex = n);
+        }
+        
+        function showBanners(n) {
+            let i;
+            const banners = document.getElementsByClassName("banner");
+            const dots = document.getElementsByClassName("dot");
+            
+            if (n > banners.length) {bannerIndex = 1}
+            if (n < 1) {bannerIndex = banners.length}
+            
+            for (i = 0; i < banners.length; i++) {
+                banners[i].classList.remove("active");
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            
+            banners[bannerIndex-1].classList.add("active");
+            dots[bannerIndex-1].classList.add("active");
+        }
+    </script>
 </body>
 </html> 
