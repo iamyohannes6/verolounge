@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Menu data organized by categories
     const menuData = {
         whiskey: [
-            { name: "Blue label", fullPrice: 45000, halfPrice: null },
+            { name: "Blue label", fullPrice: 55000, halfPrice: null },
             { name: "Gold label", fullPrice: 16000, halfPrice: 8500 },
             { name: "Double black", fullPrice: 12000, halfPrice: 6500 },
             { name: "Black label", fullPrice: 8500, halfPrice: 5000 },
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "White horse", fullPrice: 6500, halfPrice: 4000 }
         ],
         vodka: [
-            { name: "Gery goose", fullPrice: 11000, halfPrice: 6500 },
+            { name: "Gery goose", fullPrice: 12000, halfPrice: 6500 },
             { name: "Absolute", fullPrice: 6500, halfPrice: 4000 },
             { name: "Stoli 0.75", fullPrice: 5000, halfPrice: null },
             { name: "Stoli 0.5", fullPrice: 4000, halfPrice: null }
@@ -41,12 +41,12 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Amarula", fullPrice: 7500, halfPrice: 4000 }
         ],
         cognac: [
-            { name: "Hennessey v.s", fullPrice: 19000, halfPrice: null },
-            { name: "Hennessey v.s.o.p", fullPrice: 19000, halfPrice: null },
-            { name: "Remy Martiny 0.75", fullPrice: 25000, halfPrice: null }
+            { name: "Hennessey v.s", fullPrice: 22000, halfPrice: null },
+            { name: "Hennessey v.s.o.p", fullPrice: 22000, halfPrice: null },
+            { name: "Remy Martiny 0.75", fullPrice: 27000, halfPrice: null }
         ],
         champagne: [
-            { name: "Moet", fullPrice: 18500, halfPrice: null },
+            { name: "Moet", fullPrice: 20000, halfPrice: null },
             { name: "Zonin black", fullPrice: 6000, halfPrice: null }
         ],
         wine: [
