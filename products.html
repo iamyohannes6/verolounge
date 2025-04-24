@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Browse our selection of premium alcoholic beverages at Vero Lounge. View our full and half portion prices for whiskey, vodka, gin, tequila, and more.">
     <meta name="theme-color" content="#0a0a0a">
+    <style>
+        @font-face {
+            font-family: 'Addis-Sans';
+            src: url('assets/Addis-Sans.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        .tigrinya-font {
+            font-family: 'Addis-Sans', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -49,13 +62,13 @@
     
     <script src="products.js"></script>
     <script>
-        // Check if the category is a cocktail type to adjust header
+        // Check if the category is a cocktail type or food to adjust header
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const category = urlParams.get('category') || 'whiskey';
             
-            // If category is one of the cocktail types, adjust the header
-            if (category === 'classiccocktails' || category === 'mocktails' || category === 'signaturecocktails') {
+            // If category is one of the cocktail types or food, adjust the header
+            if (category === 'classiccocktails' || category === 'mocktails' || category === 'signaturecocktails' || category === 'food') {
                 const headerElement = document.getElementById('items-header');
                 if (headerElement) {
                     headerElement.innerHTML = `

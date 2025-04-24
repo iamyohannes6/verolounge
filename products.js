@@ -75,6 +75,15 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Spiced Paloma – Gin, Orange Juice, Spiced Syrup, Chili-Salt Rim", fullPrice: 750, halfPrice: null },
             { name: "Velvet Espresso – Vodka, Coffee Liqueur, Amaretto", fullPrice: 500, halfPrice: null },
             { name: "Vero Flame – Absinthe, Lime, Gin, Vodka, Rum, Simple Syrup", fullPrice: 950, halfPrice: null }
+        ],
+        food: [
+            { name: "ጥብሲ", fullPrice: 500, halfPrice: null },
+            { name: "ደረቅ ጥብስ", fullPrice: 600, halfPrice: null },
+            { name: "ደሮ ወጥ", fullPrice: 600, halfPrice: null },
+            { name: "የፍየል ኣሮስቶ", fullPrice: 600, halfPrice: null },
+            { name: "ሸክላ ጥብስ", fullPrice: 600, halfPrice: null },
+            { name: "እስፔሻል ፒዛ", fullPrice: 700, halfPrice: null },
+            { name: "ሮስትድ ቺክን", fullPrice: 2500, halfPrice: null }
         ]
     };
 
@@ -127,6 +136,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                    category === 'mocktails' || 
                                    category === 'signaturecocktails');
         
+        // Check if this is the food category that uses Tigrinya language
+        const isFoodCategory = (category === 'food');
+        
         // Create and append each item to the list with staggered animation
         items.forEach((item, index) => {
             const itemElement = document.createElement('div');
@@ -150,6 +162,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="item-name">
                         <div>${itemName}</div>
                         <span class="ingredients">${ingredients ? ingredients : ''}</span>
+                    </div>
+                    <div class="price-column">
+                        <div class="price" style="flex: 2; text-align: center;">${formatPrice(item.fullPrice)}</div>
+                    </div>
+                `;
+            } else if (isFoodCategory) {
+                // Food items with Tigrinya font
+                itemElement.innerHTML = `
+                    <div class="item-name">
+                        <div class="tigrinya-font">${item.name}</div>
                     </div>
                     <div class="price-column">
                         <div class="price" style="flex: 2; text-align: center;">${formatPrice(item.fullPrice)}</div>
