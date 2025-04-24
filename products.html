@@ -29,7 +29,7 @@
         </header>
         
         <div class="products-container">
-            <div class="items-header">
+            <div class="items-header" id="items-header">
                 <div class="item-name">Product Name</div>
                 <div class="price-column">
                     <div class="price-header">Full</div>
@@ -48,5 +48,25 @@
     </div>
     
     <script src="products.js"></script>
+    <script>
+        // Check if the category is a cocktail type to adjust header
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category') || 'whiskey';
+            
+            // If category is one of the cocktail types, adjust the header
+            if (category === 'classiccocktails' || category === 'mocktails' || category === 'signaturecocktails') {
+                const headerElement = document.getElementById('items-header');
+                if (headerElement) {
+                    headerElement.innerHTML = `
+                        <div class="item-name">Product Name</div>
+                        <div class="price-column">
+                            <div class="price-header" style="flex: 2; text-align: center;">Price</div>
+                        </div>
+                    `;
+                }
+            }
+        });
+    </script>
 </body>
 </html> 

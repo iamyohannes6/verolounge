@@ -54,6 +54,27 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Dry red", fullPrice: 2500, halfPrice: null },
             { name: "Antica", fullPrice: 2500, halfPrice: null },
             { name: "Cuve", fullPrice: 2500, halfPrice: null }
+        ],
+        classiccocktails: [
+            { name: "Vero Royale – Gin, Rosemary Syrup, Lime, Bitters", fullPrice: 700, halfPrice: null },
+            { name: "Negroni – Gin, Campari, Sweet Vermouth, Orange Peel", fullPrice: 800, halfPrice: null },
+            { name: "Vero Vine – Vodka, Lemon Juice, Simple Syrup, Egg White (optional)", fullPrice: 600, halfPrice: null },
+            { name: "Vero Drop – Vodka, Simple Syrup, Lemon Juice", fullPrice: 500, halfPrice: null },
+            { name: "Long Ice Land Vero Tea – Gin, Vodka, Tequila, Rum, Blue Curaçao, Lemon, Sprite", fullPrice: 950, halfPrice: null }
+        ],
+        mocktails: [
+            { name: "Vero Fizz – Orange Juice, Lemon Juice, Ginger Syrup, Blue Curaçao, Sprite", fullPrice: 250, halfPrice: null },
+            { name: "Vero Sunrise – Pineapple Juice, Lemon Juice, Simple Syrup, Grenadine, Soda", fullPrice: 250, halfPrice: null },
+            { name: "Vero Bloom – Rose Syrup, Lime Juice, Sparkling Water", fullPrice: 250, halfPrice: null },
+            { name: "Tropical Smoothie – Watermelon, Lime, Mint, Simple Syrup, Sprite", fullPrice: 250, halfPrice: null },
+            { name: "Berry Smash – Strawberry Syrup, Orange Juice, Lemon Juice, Soda, Blue Curaçao", fullPrice: 250, halfPrice: null }
+        ],
+        signaturecocktails: [
+            { name: "Smoking Vero – Whiskey, Lemon Juice, Egg White (optional), Smoked Glass", fullPrice: 950, halfPrice: null },
+            { name: "Midnight Bloom – Gin, Simple Syrup, Lemon Juice, Absinthe, Tonic", fullPrice: 800, halfPrice: null },
+            { name: "Spiced Paloma – Gin, Orange Juice, Spiced Syrup, Chili-Salt Rim", fullPrice: 750, halfPrice: null },
+            { name: "Velvet Espresso – Vodka, Coffee Liqueur, Amaretto", fullPrice: 500, halfPrice: null },
+            { name: "Vero Flame – Absinthe, Lime, Gin, Vodka, Rum, Simple Syrup", fullPrice: 950, halfPrice: null }
         ]
     };
 
@@ -101,6 +122,11 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
+        // Check if this is a cocktail category
+        const isCocktailCategory = (category === 'classiccocktails' || 
+                                   category === 'mocktails' || 
+                                   category === 'signaturecocktails');
+        
         // Create and append each item to the list with staggered animation
         items.forEach((item, index) => {
             const itemElement = document.createElement('div');
@@ -108,13 +134,37 @@ document.addEventListener('DOMContentLoaded', function() {
             itemElement.style.opacity = '0';
             itemElement.style.transform = 'translateY(20px)';
             
-            itemElement.innerHTML = `
-                <div class="item-name">${item.name}</div>
-                <div class="price-column">
-                    <div class="price ${!item.fullPrice ? 'empty' : ''}">${formatPrice(item.fullPrice)}</div>
-                    <div class="price ${!item.halfPrice ? 'empty' : ''}">${formatPrice(item.halfPrice)}</div>
-                </div>
-            `;
+            if (isCocktailCategory) {
+                // Split the name and ingredients for cocktails at the "–" character
+                let itemName = item.name;
+                let ingredients = '';
+                
+                if (item.name.includes('–')) {
+                    const parts = item.name.split('–');
+                    itemName = parts[0].trim();
+                    ingredients = parts[1].trim();
+                }
+                
+                // Single price column for cocktails with styled ingredients
+                itemElement.innerHTML = `
+                    <div class="item-name">
+                        <div>${itemName}</div>
+                        <span class="ingredients">${ingredients ? ingredients : ''}</span>
+                    </div>
+                    <div class="price-column">
+                        <div class="price" style="flex: 2; text-align: center;">${formatPrice(item.fullPrice)}</div>
+                    </div>
+                `;
+            } else {
+                // Regular two price columns
+                itemElement.innerHTML = `
+                    <div class="item-name">${item.name}</div>
+                    <div class="price-column">
+                        <div class="price ${!item.fullPrice ? 'empty' : ''}">${formatPrice(item.fullPrice)}</div>
+                        <div class="price ${!item.halfPrice ? 'empty' : ''}">${formatPrice(item.halfPrice)}</div>
+                    </div>
+                `;
+            }
             
             itemsList.appendChild(itemElement);
             
