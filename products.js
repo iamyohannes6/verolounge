@@ -92,9 +92,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const categoryTitle = document.getElementById('category-title');
     const categoryNavLink = document.getElementById('category-nav-link');
     
-    // Get the category from URL
+    // Get the category from URL with better error handling
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category') || 'whiskey';
+    let category = (urlParams.get('category') || 'whiskey').toLowerCase();
+    
+    // Ensure the category exists, fallback to whiskey if not
+    if (!menuData[category]) {
+        console.warn(`Category '${category}' not found, defaulting to 'whiskey'`);
+        category = 'whiskey';
+    }
     
     // Update the category title
     categoryTitle.textContent = capitalizeFirstLetter(category);
@@ -124,10 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get items for the selected category
         const items = menuData[category];
         
-        // If category doesn't exist, show error and return to index
+        // If category doesn't exist, show message and default to whiskey
         if (!items) {
-            alert('Category not found!');
-            window.location.href = 'index.html';
+            console.error(`Category '${category}' not found in menu data`);
+            // Instead of an alert, we'll just default to whiskey
+            displayItems('whiskey');
             return;
         }
         
