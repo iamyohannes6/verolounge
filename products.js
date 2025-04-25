@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuData = {
         whiskey: [
             { name: "Blue label", fullPrice: 55000, halfPrice: null },
-            { name: "Gold label", fullPrice: 16000, halfPrice: 8500 },
+            { name: "Gold label", fullPrice: 20000, halfPrice: 11000 },
             { name: "Double black", fullPrice: 12000, halfPrice: 6500 },
             { name: "Black label", fullPrice: 8500, halfPrice: 5000 },
             { name: "Red label", fullPrice: 6000, halfPrice: 3500 },
