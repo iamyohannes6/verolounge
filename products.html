@@ -60,15 +60,15 @@
         </footer>
     </div>
     
-    <script src="products.js?v=1.1"></script>
+    <script src="products.js?v=1.2"></script>
     <script>
-        // Check if the category is a cocktail type or food to adjust header
+        // Check if the category is a cocktail type to adjust header
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const category = urlParams.get('category') || 'whiskey';
             
-            // If category is one of the cocktail types or food, adjust the header
-            if (category === 'classiccocktails' || category === 'mocktails' || category === 'signaturecocktails' || category === 'food') {
+            // If category is one of the cocktail types, adjust the header
+            if (category === 'classiccocktails' || category === 'mocktails' || category === 'signaturecocktails') {
                 const headerElement = document.getElementById('items-header');
                 if (headerElement) {
                     headerElement.innerHTML = `

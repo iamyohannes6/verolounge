@@ -77,13 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Vero Flame – Absinthe, Lime, Gin, Vodka, Rum, Simple Syrup", fullPrice: 950, halfPrice: null }
         ],
         food: [
-            { name: "ጥብሲ", fullPrice: 500, halfPrice: null },
-            { name: "ደረቅ ጥብስ", fullPrice: 600, halfPrice: null },
-            { name: "ደሮ ወጥ", fullPrice: 600, halfPrice: null },
-            { name: "የፍየል ኣሮስቶ", fullPrice: 600, halfPrice: null },
-            { name: "ሸክላ ጥብስ", fullPrice: 600, halfPrice: null },
-            { name: "እስፔሻል ፒዛ", fullPrice: 700, halfPrice: null },
-            { name: "ሮስትድ ቺክን", fullPrice: 2500, halfPrice: null }
+            { name: "ጥብሲ", englishName: "Grilled Meat", fullPrice: 500, halfPrice: null },
+            { name: "ደረቅ ጥብስ", englishName: "Dry Roasted Meat", fullPrice: 2400, halfPrice: 1200 },
+            { name: "ደሮ ወጥ", englishName: "Chicken Stew", fullPrice: 600, halfPrice: null },
+            { name: "የፍየል ኣሮስቶ", englishName: "Goat Roast", fullPrice: 2400, halfPrice: 1200 },
+            { name: "ሸክላ ጥብስ", englishName: "Clay Pot Roast", fullPrice: 2400, halfPrice: 1200 },
+            { name: "እስፔሻል ፒዛ", englishName: "Special Pizza", fullPrice: 700, halfPrice: null },
+            { name: "ሮስትድ ቺክን", englishName: "Roasted Chicken", fullPrice: 2500, halfPrice: 1250 }
         ]
     };
 
@@ -175,13 +175,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
             } else if (isFoodCategory) {
-                // Food items with Tigrinya font
+                // Food items with Tigrinya font and English translation
                 itemElement.innerHTML = `
                     <div class="item-name">
                         <div class="tigrinya-font">${item.name}</div>
+                        <span class="ingredients">${item.englishName}</span>
                     </div>
                     <div class="price-column">
-                        <div class="price" style="flex: 2; text-align: center;">${formatPrice(item.fullPrice)}</div>
+                        <div class="price ${!item.fullPrice ? 'empty' : ''}">${formatPrice(item.fullPrice)}</div>
+                        <div class="price ${!item.halfPrice ? 'empty' : ''}">${formatPrice(item.halfPrice)}</div>
                     </div>
                 `;
             } else {
