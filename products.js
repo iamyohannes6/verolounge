@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Gold label", fullPrice: 20000, halfPrice: 11000 },
             { name: "Double black", fullPrice: 12000, halfPrice: 6500 },
             { name: "Black label", fullPrice: 8500, halfPrice: 5000 },
+            { name: "Duty Free Black label", fullPrice: 11000, halfPrice: null },
             { name: "Red label", fullPrice: 6000, halfPrice: 3500 },
             { name: "Monkey shoulder", fullPrice: 10000, halfPrice: 5500 },
             { name: "Grants", fullPrice: 7500, halfPrice: 4000 },
@@ -82,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "ደሮ ወጥ", englishName: "Chicken Stew", fullPrice: 600, halfPrice: null },
             { name: "የፍየል ኣሮስቶ", englishName: "Goat Roast", fullPrice: 2400, halfPrice: 1200 },
             { name: "ሸክላ ጥብስ", englishName: "Clay Pot Roast", fullPrice: 2400, halfPrice: 1200 },
-            { name: "እስፔሻል ፒዛ", englishName: "Special Pizza", fullPrice: 700, halfPrice: null },
+            { name: "እስፔሻል ፒዛ", englishName: "Special Pizza", fullPrice: 900, halfPrice: null },
             { name: "ሮስትድ ቺክን", englishName: "Roasted Chicken", fullPrice: 2500, halfPrice: 1250 }
         ]
     };
