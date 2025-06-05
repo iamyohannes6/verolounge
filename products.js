@@ -78,13 +78,37 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Vero Flame – Absinthe, Lime, Gin, Vodka, Rum, Simple Syrup", fullPrice: 950, halfPrice: null }
         ],
         food: [
-            { name: "ጥብሲ", englishName: "Grilled Meat", fullPrice: 500, halfPrice: null },
-            { name: "ደረቅ ጥብስ", englishName: "Dry Roasted Meat", fullPrice: 2400, halfPrice: 1200 },
-            { name: "ደሮ ወጥ", englishName: "Chicken Stew", fullPrice: 600, halfPrice: null },
+            // Tibs (Grilled/Roasted Meat)
+            { name: "ጥብሲ", englishName: "Grilled Meat Tibs", fullPrice: 600, halfPrice: null },
+            { name: "የበግ ጥብስ", englishName: "Lamb Tibs", fullPrice: 600, halfPrice: null },
+            { name: "ደረቅ ጥብስ", englishName: "Dry Lamb Tibs", fullPrice: 1400, halfPrice: null },
             { name: "የፍየል ኣሮስቶ", englishName: "Goat Roast", fullPrice: 2400, halfPrice: 1200 },
             { name: "ሸክላ ጥብስ", englishName: "Clay Pot Roast", fullPrice: 2400, halfPrice: 1200 },
-            { name: "እስፔሻል ፒዛ", englishName: "Special Pizza", fullPrice: 900, halfPrice: null },
-            { name: "ሮስትድ ቺክን", englishName: "Roasted Chicken", fullPrice: 2500, halfPrice: 1250 }
+            
+            // Chicken Dishes
+            { name: "ደሮ ወጥ", englishName: "Doro Wet", fullPrice: 750, halfPrice: null },
+            { name: "ሮስትድ ቺክን", englishName: "Roasted Chicken", fullPrice: 1500, halfPrice: null },
+            { name: "ቺክን ዊንግ", englishName: "Chicken Wing", fullPrice: 1200, halfPrice: null },
+            { name: "ቺክን ፓርሜዛን", englishName: "Chicken Parmesan", fullPrice: 1200, halfPrice: null },
+            { name: "ቺክን ናገት", englishName: "Chicken Nugget", fullPrice: 1200, halfPrice: null },
+            { name: "ቬሮ ስታይል ስፔሻል ቺክን", englishName: "Vero Style Special Chicken", fullPrice: 1200, halfPrice: null },
+            { name: "ቺክን ሱፕ", englishName: "Chicken Soup", fullPrice: 450, halfPrice: null },
+            
+            // Pizza
+            { name: "እስፔሻል ፒዛ", englishName: "Vero Special Pizza", fullPrice: 1000, halfPrice: null },
+            { name: "ፒዛ ማርጋሪታ", englishName: "Pizza Margarita", fullPrice: 750, halfPrice: null },
+            { name: "ፒዛ ሃዋይያን", englishName: "Pizza Hawaiian", fullPrice: 850, halfPrice: null },
+            { name: "ቬጀተብል ፒዛ", englishName: "Vegetable Pizza", fullPrice: 650, halfPrice: null },
+            
+            // Traditional Ethiopian Dishes
+            { name: "ቋንጣ ፍርፍር", englishName: "Quanta Firfir", fullPrice: 600, halfPrice: null },
+            { name: "ዱለት", englishName: "Dulet", fullPrice: 500, halfPrice: null },
+            { name: "ቂንጥብጣብ", englishName: "Kintbtab", fullPrice: 500, halfPrice: null },
+            
+            // Special Items & Combos
+            { name: "ኮርኒስ", englishName: "Cornis", fullPrice: 2500, halfPrice: null },
+            { name: "ኮምቦ", englishName: "Combo", fullPrice: 1200, halfPrice: null },
+            { name: "ቬሮ ስፔሻል ሳላድ", englishName: "Vero Special Salad", fullPrice: 600, halfPrice: null }
         ]
     };
 
