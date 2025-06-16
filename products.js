@@ -95,10 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "ቺክን ሱፕ", englishName: "Chicken Soup", fullPrice: 450, halfPrice: null },
             
             // Pizza
-            { name: "እስፔሻል ፒዛ", englishName: "Vero Special Pizza", fullPrice: 1000, halfPrice: null },
-            { name: "ፒዛ ማርጋሪታ", englishName: "Pizza Margarita", fullPrice: 750, halfPrice: null },
-            { name: "ፒዛ ሃዋይያን", englishName: "Pizza Hawaiian", fullPrice: 850, halfPrice: null },
-            { name: "ቬጀተብል ፒዛ", englishName: "Vegetable Pizza", fullPrice: 650, halfPrice: null },
+            { name: "እስፔሻል ፒዛ", englishName: "Vero Special Pizza", fullPrice: 1100, halfPrice: null },
+            { name: "ፒዛ ማርጋሪታ", englishName: "Pizza Margarita", fullPrice: 850, halfPrice: null },
+            { name: "ፒዛ ሃዋይያን", englishName: "Pizza Hawaiian", fullPrice: 900, halfPrice: null },
+            { name: "ቬጀተብል ፒዛ", englishName: "Vegetable Pizza", fullPrice: 750, halfPrice: null },
             
             // Traditional Ethiopian Dishes
             { name: "ቋንጣ ፍርፍር", englishName: "Quanta Firfir", fullPrice: 600, halfPrice: null },
