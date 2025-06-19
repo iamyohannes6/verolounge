@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuData = {
         whiskey: [
             { name: "Blue label", fullPrice: 55000, halfPrice: null },
-            { name: "Gold label", fullPrice: 20000, halfPrice: 11000 },
+            { name: "Gold label", fullPrice: 16000, halfPrice: 10000 },
             { name: "Double black", fullPrice: 12000, halfPrice: 6500 },
-            { name: "Black label", fullPrice: 8500, halfPrice: 5000 },
+            { name: "Black label", fullPrice: 9000, halfPrice: 6000 },
             { name: "Duty Free Black label", fullPrice: 11000, halfPrice: null },
             { name: "Red label", fullPrice: 6000, halfPrice: 3500 },
             { name: "Monkey shoulder", fullPrice: 10000, halfPrice: 5500 },
             { name: "Grants", fullPrice: 7500, halfPrice: 4000 },
             { name: "Chivas 18", fullPrice: 16500, halfPrice: 8500 },
-            { name: "Chivas 12", fullPrice: 8500, halfPrice: 5000 },
+            { name: "Chivas 12", fullPrice: 9000, halfPrice: 6000 },
             { name: "Jamson", fullPrice: 7000, halfPrice: 4000 },
             { name: "Jack Daniel", fullPrice: 8500, halfPrice: 5000 },
             { name: "King Robert", fullPrice: 5000, halfPrice: 3500 },
