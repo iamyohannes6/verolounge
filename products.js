@@ -5,19 +5,19 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Blue label", fullPrice: 55000, halfPrice: null },
             { name: "Gold label", fullPrice: 16000, halfPrice: 10000 },
             { name: "Double black", fullPrice: 12000, halfPrice: 6500 },
-            { name: "Black label", fullPrice: 9000, halfPrice: 6000 },
-            { name: "Duty Free Black label", fullPrice: 13500, halfPrice: 8500 },
+            { name: "Black label", fullPrice: 9000, halfPrice: 5000 },
+            { name: "Duty Free Black label", fullPrice: 11000, halfPrice: null },
             { name: "Red label", fullPrice: 6000, halfPrice: 3500 },
-            { name: "Monkey shoulder", fullPrice: 10000, halfPrice: 5500 },
+            { name: "Monkey shoulder", fullPrice: 9000, halfPrice: 5500 },
             { name: "Grants", fullPrice: 7500, halfPrice: 4000 },
-            { name: "Chivas 18", fullPrice: 19000, halfPrice: null },
+            { name: "Chivas 18", fullPrice: 19000, halfPrice: 8500 },
             { name: "Chivas 18 0.75", fullPrice: 18000, halfPrice: null },
             { name: "Chivas 12", fullPrice: 9000, halfPrice: 6000 },
             { name: "Jamson", fullPrice: 7000, halfPrice: 4000 },
             { name: "Jack Daniel", fullPrice: 8500, halfPrice: 5000 },
             { name: "King Robert", fullPrice: 5000, halfPrice: 3500 },
             { name: "Glenfiddich 15", fullPrice: 19000, halfPrice: 11000 },
-            { name: "Glenfiddich 12", fullPrice: null, halfPrice: null },
+            { name: "Glenfiddich 12", fullPrice: 18000, halfPrice: null },
             { name: "White horse", fullPrice: 6500, halfPrice: 4000 }
         ],
         vodka: [
@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "ጥብሲ", englishName: "Grilled Meat Tibs", fullPrice: 600, halfPrice: null },
             { name: "የበግ ጥብስ", englishName: "Lamb Tibs", fullPrice: 600, halfPrice: null },
             { name: "ደረቅ ጥብስ", englishName: "Dry Lamb Tibs", fullPrice: 1400, halfPrice: null },
-            { name: "የፍየል ኣሮስቶ", englishName: "Goat Roast", fullPrice: 2400, halfPrice: 1200 },
-            { name: "ሸክላ ጥብስ", englishName: "Clay Pot Roast", fullPrice: 2400, halfPrice: 1200 },
+            { name: "የፍየል ኣሮስቶ", englishName: "Goat Roast", fullPrice: 2400, halfPrice: 1350 },
+            { name: "ሸክላ ጥብስ", englishName: "Clay Pot Roast", fullPrice: 2400, halfPrice: 1400 },
             
             // Chicken Dishes
             { name: "ደሮ ወጥ", englishName: "Doro Wet", fullPrice: 750, halfPrice: null },
@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "ቺክን ዊንግ", englishName: "Chicken Wing", fullPrice: 1200, halfPrice: null },
             { name: "ቺክን ፓርሜዛን", englishName: "Chicken Parmesan", fullPrice: 1200, halfPrice: null },
             { name: "ቺክን ናገት", englishName: "Chicken Nugget", fullPrice: 1200, halfPrice: null },
-            { name: "ቬሮ ስታይል ስፔሻል ቺክን", englishName: "Vero Style Special Chicken", fullPrice: 1200, halfPrice: null },
-            { name: "ቺክን ሱፕ", englishName: "Chicken Soup", fullPrice: 450, halfPrice: null },
+            { name: "ቬሮ ስታይል ስፔሻል ቺክን", englishName: "Vero Style Special Chicken", fullPrice: 1400, halfPrice: null },
+            { name: "ቺክን ሱፕ", englishName: "Chicken Soup", fullPrice: 500, halfPrice: null },
             
             // Pizza
             { name: "እስፔሻል ፒዛ", englishName: "Vero Special Pizza", fullPrice: 1100, halfPrice: null },
@@ -109,7 +109,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Special Items & Combos
             { name: "ኮርኒስ", englishName: "Cornis", fullPrice: 2500, halfPrice: null },
             { name: "ኮምቦ", englishName: "Combo", fullPrice: 1200, halfPrice: null },
-            { name: "ቬሮ ስፔሻል ሳላድ", englishName: "Vero Special Salad", fullPrice: 600, halfPrice: null }
+            { name: "ቬሮ ስፔሻል ሳላድ", englishName: "Vero Special Salad", fullPrice: 600, halfPrice: null },
+            { name: "Vegitable soup", fullPrice: 500, halfPrice: null },
+            { name: "Soup", fullPrice: 400, halfPrice: null }
+            
         ]
     };
 
