@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
         whiskey: [
             { name: "Blue label", fullPrice: 55000, halfPrice: null },
             { name: "Gold label", fullPrice: 16000, halfPrice: 10000 },
-            { name: "Double black", fullPrice: 12000, halfPrice: 6500 },
+            { name: "Double black", fullPrice: 11000, halfPrice: 6000 },
             { name: "Black label", fullPrice: 9000, halfPrice: 5000 },
-            { name: "Duty Free Black label", fullPrice: 11000, halfPrice: null },
+            { name: "Duty Free Black label", fullPrice: 11000, halfPrice: 7500 },
             { name: "Red label", fullPrice: 6000, halfPrice: 3500 },
             { name: "Monkey shoulder", fullPrice: 9000, halfPrice: 5500 },
             { name: "Grants", fullPrice: 7500, halfPrice: 4000 },
@@ -58,18 +58,21 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Cuve", fullPrice: 2500, halfPrice: null }
         ],
         classiccocktails: [
-            { name: "Vero Royale – Gin, Rosemary Syrup, Lime, Bitters", fullPrice: 700, halfPrice: null },
-            { name: "Negroni – Gin, Campari, Sweet Vermouth, Orange Peel", fullPrice: 800, halfPrice: null },
-            { name: "Vero Vine – Vodka, Lemon Juice, Simple Syrup, Egg White (optional)", fullPrice: 600, halfPrice: null },
-            { name: "Vero Drop – Vodka, Simple Syrup, Lemon Juice", fullPrice: 500, halfPrice: null },
-            { name: "Long Ice Land Vero Tea – Gin, Vodka, Tequila, Rum, Blue Curaçao, Lemon, Sprite", fullPrice: 950, halfPrice: null }
+            { name: "Lemon Drop – Vodka, Simple Syrup, Lemon", fullPrice: 550, halfPrice: null },
+            { name: "Moscow Mule – Vodka, Ginger, Lemon", fullPrice: 550, halfPrice: null },
+            { name: "Vero Sunrise – Gin or Vodka infused with orange and Vero syrup", fullPrice: 800, halfPrice: null },
+            { name: "AMF –  Gin, Vodka, Tequila, Rum, Blue syrup sweet & sour ", fullPrice: 950, halfPrice: null },
+            { name: "True Negroni – Gin, Sweet Vermouth, Campari", fullPrice: 800, halfPrice: null },
+            { name: "Vero – Seasonal fruits infused with Gin or Vodka", fullPrice: 800, halfPrice: null }
         ],
         mocktails: [
             { name: "Vero Fizz – Orange Juice, Lemon Juice, Ginger Syrup, Blue Curaçao, Sprite", fullPrice: 250, halfPrice: null },
             { name: "Vero Sunrise – Pineapple Juice, Lemon Juice, Simple Syrup, Grenadine, Soda", fullPrice: 250, halfPrice: null },
             { name: "Vero Bloom – Rose Syrup, Lime Juice, Sparkling Water", fullPrice: 250, halfPrice: null },
             { name: "Tropical Smoothie – Watermelon, Lime, Mint, Simple Syrup, Sprite", fullPrice: 250, halfPrice: null },
-            { name: "Berry Smash – Strawberry Syrup, Orange Juice, Lemon Juice, Soda, Blue Curaçao", fullPrice: 250, halfPrice: null }
+            { name: "Berry Smash – Strawberry Syrup, Orange Juice, Lemon Juice, Soda, Blue Curaçao", fullPrice: 250, halfPrice: null },
+            { name: "Tropical Punch – Orange, Lemon, Ginger ", fullPrice: 250, halfPrice: null },
+            { name: "Sweet Sunrise – Strawberry, Orange, Lemon", fullPrice: 250, halfPrice: null }
         ],
         signaturecocktails: [
             { name: "Smoking Vero – Whiskey, Lemon Juice, Egg White (optional), Smoked Glass", fullPrice: 950, halfPrice: null },
@@ -266,3 +269,4 @@ document.addEventListener('DOMContentLoaded', function() {
     displayItems(category);
     addMenuItemInteractivity();
 }); 
+
