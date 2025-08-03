@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Gold label", fullPrice: 16000, halfPrice: 10000 },
             { name: "Double black", fullPrice: 11000, halfPrice: 6000 },
             { name: "Black label", fullPrice: 9000, halfPrice: 5000 },
-            { name: "Duty Free Black label", fullPrice: 11000, halfPrice: 7500 },
+            { name: "Double Free black", fullPrice: 11000, halfPrice: 6000 },
+            { name: "Duty Free Double Black", fullPrice: 11000, halfPrice: 7500 },
             { name: "Red label", fullPrice: 6000, halfPrice: 3500 },
             { name: "Monkey shoulder", fullPrice: 9000, halfPrice: 5500 },
             { name: "Grants", fullPrice: 7500, halfPrice: 4000 },
@@ -269,4 +270,5 @@ document.addEventListener('DOMContentLoaded', function() {
     displayItems(category);
     addMenuItemInteractivity();
 }); 
+
 
