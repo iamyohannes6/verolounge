@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: "Vero Sunrise – Gin or Vodka infused with orange and Vero syrup", fullPrice: 800, halfPrice: null },
             { name: "AMF –  Gin, Vodka, Tequila, Rum, Blue syrup sweet & sour ", fullPrice: 950, halfPrice: null },
             { name: "True Negroni – Gin, Sweet Vermouth, Campari", fullPrice: 800, halfPrice: null },
-            { name: "Vero – Seasonal fruits infused with Gin or Vodka", fullPrice: 800, halfPrice: null }
+            { name: "Vero – Seasonal fruits infused with Gin or Vodka", fullPrice: 950, halfPrice: null }
         ],
         mocktails: [
             { name: "Vero Fizz – Orange Juice, Lemon Juice, Ginger Syrup, Blue Curaçao, Sprite", fullPrice: 250, halfPrice: null },
@@ -270,6 +270,7 @@ document.addEventListener('DOMContentLoaded', function() {
     displayItems(category);
     addMenuItemInteractivity();
 }); 
+
 
 
 
